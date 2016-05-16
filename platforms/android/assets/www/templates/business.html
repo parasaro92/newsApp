@@ -1,0 +1,26 @@
+<ion-view view-title="Business">
+  <ion-content ng-init ="init()">
+    <ion-item ng-repeat="w in input">
+      <div ng-click="storyFn(w.Story)">
+        <h2>{{w.HeadLine}}</h2>
+        <p>{{w.Story}}</p>
+      </div>
+        <!-- <a ng-href="#/app/business/{{business.NewsItemId}}" class="item"> -->
+  </ion-content>
+</ion-view>
+
+<!-- <ion-view view-title="latest">
+  <ion-content>
+    <ion-item ng-repeat="w in input.NewsItem" ng-click="toggleGroup(w)"
+                    ng-class="{active: isGroupShown(w)}">
+      <h2>{{w.HeadLine}}</h2>
+    <ion-item class="item-accordion"
+    ng-repeat="item in w.items"
+    ng-show="isGroupShown(w)">
+    {{item.Story}}
+    </ion-item> -->
+      <!-- <a ng-href="{{w.Story}}" class="item"> -->
+      <!-- <p>{{w.Story}}</p> -->
+    <!-- </a> -->
+<!--   </ion-content>
+</ion-view> -->

@@ -1,0 +1,9 @@
+<ion-view view-title="Sports">
+  <ion-content ng-init ="init()">
+    <ion-item ng-repeat="w in input">
+      <div ng-click="storyFn(w.Story)">
+        <h2>{{w.HeadLine}}</h2>
+        <p>{{w.Story}}</p>
+      </div>
+  </ion-content>
+</ion-view>

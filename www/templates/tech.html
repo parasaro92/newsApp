@@ -1,6 +1,9 @@
-<ion-view view-title="Tech">
-  <ion-content>
-    <ion-item ng-repeat="w in input.NewsItem">
-      <h2>{{w.HeadLine}}</h2>
+<ion-view view-title="Tech News">
+  <ion-content ng-init ="init()">
+    <ion-item ng-repeat="w in input">
+      <div ng-click="storyFn(w.Story)">
+        <h2>{{w.HeadLine}}</h2>
+        <p>{{w.DateLine}}</p>
+      </div>
   </ion-content>
 </ion-view>
